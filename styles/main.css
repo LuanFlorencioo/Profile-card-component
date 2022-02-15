@@ -8,13 +8,54 @@
     --dark-gray: hsl(0, 0%, 59%);
 }
 
-html {
+html, * {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--desaturated-blue);
 }
 
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    background-color: var(--dark-cyan);
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+h1 span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--grayish-blue);
+    margin-left: 6px;
+}
+
+h2 {
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+
+h3 {
+    font-size: 1.05rem;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: .75rem;
+    color: var(--dark-gray);
+}
+
+img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+footer * {
+    font-size: .75rem;
+    color: #fff;
 }
