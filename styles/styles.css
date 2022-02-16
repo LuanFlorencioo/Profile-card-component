@@ -2,14 +2,11 @@
 
 body {
     background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 130% -500px, 50vw 300px;
-
 }
 
 main {
     width: 100%;
-    height: 92%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +14,7 @@ main {
 
 .profile-card-component {
     width: 90%;
-    max-width: 500px;
+    max-width: 400px;
     min-width: 300px;
     height: 400px;
     border-radius: 15px;
@@ -31,12 +28,13 @@ section.status-avatar {
     background-image: url(../images/bg-pattern-card.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 section.status-avatar img {
-    position: relative;
-    top: calc(100% - 48px);
-    left: calc(50% - 48px);
+    position: absolute;
+    top: calc(98% - 96px/2);
+    left: calc(50% - 106px/2);
 }
 
 section.profile {
@@ -49,8 +47,16 @@ section.profile {
 }
 
 section.profile .info {
-    margin-bottom: 30px;
     text-align: center;
+}
+
+section.profile .info h1 {
+    margin-bottom: 10px;
+}
+
+section.profile .info h2 {
+    font-size: .85rem;
+    margin-bottom: 30px;
 }
 
 section.statistic {
@@ -68,7 +74,9 @@ section.statistic {
 }
 
 footer {
-    width: 100%;
     height: 8%;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 195.656px/2);
     text-align: center;
 }
