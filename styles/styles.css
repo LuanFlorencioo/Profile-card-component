@@ -1,7 +1,16 @@
 @import url(./main.css);
 
-body {
-    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+@media (max-width: 600px) {
+    body {
+        background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 200vw, 200vw;
+        background-position: calc(-200vw/1.4) calc(-200vw/1.7), 45vw 50vh;
+    }
+}
+
+@media (min-width: 601px) {
+    
 }
 
 main {
@@ -14,11 +23,12 @@ main {
 
 .profile-card-component {
     width: 90%;
-    max-width: 400px;
+    max-width: 375px;
     min-width: 300px;
     height: 400px;
     border-radius: 15px;
     background-color: #fff;
+    box-shadow: 10px 15px 32px -11px rgba(0, 0, 0, 0.44);
 }
 
 section.status-avatar {
