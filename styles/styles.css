@@ -8,9 +8,14 @@
         background-position: calc(-200vw/1.4) calc(-200vw/1.7), 45vw 50vh;
     }
 }
-
-@media (min-width: 601px) {
     
+@media (min-width: 601px) {
+    body {
+        background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto, auto;
+        background-position: calc(-976px + 50vw) calc(-976px/2), 50vw 50vh;
+    }
 }
 
 main {
