@@ -17,11 +17,25 @@ html, * {
     color: var(--desaturated-blue);
 }
 
+*::selection {
+    background: var(--desaturated-blue);
+    color: var(--dark-cyan);
+}
+
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     background-color: var(--dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 50vw;
+    height: 80vh;
+    perspective: 1000px;
 }
 
 h1 {
@@ -50,6 +64,14 @@ p {
     color: var(--dark-gray);
 }
 
+a {
+    transition: .3s;
+}
+
+a:hover {
+    color: var(--desaturated-blue);
+}
+
 img {
     border-radius: 50%;
     border: 5px solid #fff;
@@ -58,4 +80,15 @@ img {
 footer * {
     font-size: .75rem;
     color: #fff;
+}
+
+@keyframes showToUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(initial);
+        opacity: initial;
+    }
 }
